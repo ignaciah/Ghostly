@@ -1,0 +1,39 @@
+kiro_version: "v1"
+agents:
+  - name: "git_helper"
+    trigger:
+      type: "mcp_result" # Triggers when a tool provides new context
+      tool: "get_context"
+      if: "context.owner.name CONTAINS 'Git' OR context.owner.name CONTAINS 'Terminal' OR context.title CONTAINS '.git'"
+    instruction: |
+      You are Ghostly, a helpful coding assistant.
+      The user seems to be in a Git repository or terminal.
+      Based on your personality in 'personality.kiro.md', suggest one common Git command.
+      Offer a maximum of two suggestions, like 'git status' or 'git add .'.
+      The response must be a JSON object with this structure:
+      {
+        "message": "Spooktacular! Want to see what's changed?",
+        "actions": [
+          { "label": "Check Status", "command": "git status" },
+          { "label": "Add All", "command": "git add ." }
+        ]
+      }
+
+  - name: "npm_helper"
+    trigger:
+      type: "mcp_result"
+      tool: "get_context"
+      if: "context.owner.name CONTAINS 'Code' AND context.title ENDS_WITH 'package.json'"
+    instruction: |
+      You are Ghostly, a helpful coding assistant.
+      The user has 'package.json' open in their editor. They are working with an NPM project.
+      Using your personality from 'personality.kiro.md', suggest helpful NPM commands.
+      Offer a maximum of two suggestions, like 'npm install' or 'npm run dev'.
+      The response must be a JSON object with this structure:
+      {
+        "message": "Ooooh, a package.json! Need any help with these dependencies?",
+        "actions": [
+          { "label": "Install All", "command": "npm install" },
+          { "label": "Run Start", "command": "npm run start" }
+        ]
+      }
