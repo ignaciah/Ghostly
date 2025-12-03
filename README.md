@@ -6,7 +6,7 @@ Ghostly is a cute, helpful ghost that lives on your desktop. But it's not like t
 
 **Ghostly** brings back the spirit of the classic desktop assistant (rest in peace, Clippy) and resurrects it with the magic of modern AI! Using **Kiro's Agent Hooks, MCP, and Steering Docs**, Ghostly is a helpful little ghoul that watches what you do and offers spooky-smart help right when you need it.
 
-![Ghostly App Preview](ghostly.png) 
+![Alt tex](path/to/your/image.png (https://media.giphy.com/media/l4FGlDRLRyxG8QB3C/giphy.gif)
 *(Imagine a cute ghost popping up with a code snippet!)*
 
 ---
