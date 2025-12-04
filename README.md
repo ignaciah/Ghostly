@@ -2,7 +2,7 @@
 Ghostly is a cute, helpful ghost that lives on your desktop. But it's not like the old assistants. Ghostly is powered by a real AI brain (using Kiro's MCP) and can actually help you with your tasks. It's a friendly spirit, a helpful haunt for your computer, that pops up only when you truly need it.
 # 👻 Ghostly: Your Helpful, Haunting Desktop Assistant
 
-**Kiroween Hackathon 2024 | Category: Resurrection**
+**Kiroween Hackathon 2025 | Category: Resurrection**
 
 **Ghostly** brings back the spirit of the classic desktop assistant (rest in peace, Clippy) and resurrects it with the magic of modern AI! Using **Kiro's Agent Hooks, MCP, and Steering Docs**, Ghostly is a helpful little ghoul that watches what you do and offers spooky-smart help right when you need it.
 
